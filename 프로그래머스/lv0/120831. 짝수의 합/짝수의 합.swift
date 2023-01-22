@@ -3,10 +3,8 @@ import Foundation
 func getEvenNumber(_ num: Int) -> Int {
     var evenValue = 0
     
-    for i in 1...num {
-        if i % 2 == 0 {
+    for i in 1...num where i % 2 == 0 {
             evenValue += i
-        }
     }
     return evenValue
 }
